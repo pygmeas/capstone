@@ -1,0 +1,140 @@
+/* Full-page setup */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    /* prevent horizontal white gap */
+    background-color: #3C3C3C;
+    /* fallback color if image fails */
+}
+
+/* Body with fixed background */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #3C3C3C;
+    padding-top: 80px;
+    /* space for fixed header */
+
+    background-image: url('./images/background.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    /* keeps image fixed while scrolling */
+    background-size: cover;
+
+}
+
+
+
+/* --- Fixed Banner --- */
+header {
+    background-color: rgba(91, 70, 54, 0.85);
+    color: #F5E4C3;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header a {
+    color: #F5E4C3;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #F06543;
+}
+
+/* --- Intro Section --- */
+.intro {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.intro h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* --- Projects Grid --- */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 0 40px 60px;
+}
+
+.project-card {
+    background-color: #FFF8F0;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s;
+
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+
+    width: 100%;
+    border-radius: 12px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    margin-top: 10px;
+    color: #5B4636;
+}
+
+/* --- Footer --- */
+footer {
+    padding: 20px 0;
+    background-color: rgba(91, 70, 54, 0.7);
+    color: #F5E4C3;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+    backdrop-filter: blur(3px);
+}
+
+main.intro {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    text-align: center;
+    padding: 100px;
+}
+
+.intro-rock {
+    padding: 120px;
+}
