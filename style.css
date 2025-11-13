@@ -118,11 +118,17 @@ footer {
     color: #F5E4C3;
     text-align: center;
     padding: 20px 0;
-    margin-top: 40px;
+   
     font-size: 0.9em;
     backdrop-filter: blur(3px);
+    margin-top: 400px;
 }
 
+@media (max-width: 600px) {
+    footer {
+      margin-top: 0px;
+    }
+  }
 main.intro {
     flex: 1;
 
